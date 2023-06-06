@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: url(https://mir-s3-cdn-cf.behance.net/project_modules/hd/cca1e136569841.5720ffd3c7679.gif)no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+header.sticky{
+    padding: 5px 100px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+header .username{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 11.9vh;
+}
+header.sticky .username,
+header.sticky ul li a{
+    color: #fff;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 280px;
+    border-bottom: 2px solid #fff;
+}
+.inputfile{
+    position: relative;
+    margin: 30px 0;
+    width: 280px;
+}
+.inputbox label, .inputfile label{
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputbox input, .inputfile input{
+    width: auto;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.inputfile input[type="file"] {
+    opacity: 1;
+    width: 250px;
+    height: 30px;
+    margin: 10px 0;
+}
+.buttonwel{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.post-area{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.post-box{
+    position: relative;
+    width: 350px;
+    height: 450px;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    margin: 30px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.5);
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+h3{
+    height: 50px;
+    width: auto;
+    font-size: 1.8em;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+  }
+img{
+    height: 100%;
+    text-align: center;
+}
+.descap {
+    width: 320px;
+    height: 170px;
+    overflow: auto;
+    padding: 10px;
+
+}
+p{
+    word-wrap: break-word;
+    font-size: 1em;
+    color: #fff;
+}
+.edit-form{
+    position: relative;
+    width: 200px;
+    height: 450px;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    padding-top: 40px;
+    margin-top: 30px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.5);
+    display: inline-block;
+    vertical-align: top;
+}
+.edit-form h3{
+    text-align: center;
+    width: 100%;
+}
+.inputedit{
+    position: relative;
+    margin: 30px 0;
+    width: auto;
+    border-bottom: 2px solid #fff;
+}
+.inputedit label{
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputedit input{
+    width: auto;
+    height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.inputeditbutton{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+.post-boxtimeline{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    margin: 30px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.5);
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.timeline{
+    margin-top: 110px;
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 50px;
+    flex-wrap: wrap;
+}
